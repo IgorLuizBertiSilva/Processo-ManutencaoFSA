@@ -1,0 +1,104 @@
+#diagrama_scrum {
+    position: relative;
+    overflow: visible;
+    max-width: 1560px;
+    max-height: 1200px;
+}
+
+.clickable {
+    position: absolute;
+    display: block;
+	/*background-color: red;*/
+	/*opacity:  0.2;*/
+}
+
+.round {
+    border-radius: 5px;
+}
+
+.green:hover {
+    background-color: rgba(0, 100, 0, 0.2);
+}
+
+.red:hover {
+    background-color: rgba(140, 0, 20, 0.2);
+}
+
+.blue:hover {
+    background-color: rgba(0, 0, 200, 0.1);
+}
+
+.clickable:hover {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#captacao {
+    width: 13.4%;
+    height: 4.4%;
+    top: 18.8%;
+    left: 32.8%;
+} 
+
+#revisao_historias {
+    width: 13.8%;
+    height: 4.4%;
+    top: 29%;
+    left: 32%;
+}
+
+#definir_ferramentas {
+    width: 10.7%;
+    height: 7.4%;
+    top: 47.5%;
+    left: 52%;
+}
+
+#elaboracao_backlog {
+    width: 10.5%;
+    height: 4.4%;
+    top: 48.5%;
+    left: 30%;
+}
+#planejar_sprint {
+    width: 12.1%;
+    height: 2.5%;
+    top: 11.5%;
+    left: 61.5%;
+}
+#executar_atividades {
+    width: 14%;
+    height: 4.4%;
+    top: 23.6%;
+    left: 61%;
+}
+#reuniao {
+    width: 11.8%;
+    height: 4.4%;
+    top: 24.0%;
+    left: 77%;
+}
+#revisao_sprint {
+    width: 14.4%;
+    height: 4.4%;
+    top: 38%;
+    left: 61%;
+}
+#realizar_retrospectiva {
+    width: 15%;
+    height: 4.4%;
+    top: 73.3%;
+    left: 61.0%;
+}
+#verificar_product_backlog {
+    width: 15%;
+    height: 4.4%;
+    top: 73.3%;
+    left: 35%;
+}
+#verificar_historias {
+    width: 16.7%;
+    height: 4.4%;
+    top: 80%;
+    left: 13.5%;
+}
