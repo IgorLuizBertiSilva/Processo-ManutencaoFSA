@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet" />
+		<script src="./Desenvolvimento/scripts/costumizar.js"></script>
 	<script src="./Desenvolvimento/scripts/click_effect.js"></script>
 	<!--<script type="text/javascript" src="https://livejs.com/live.js"></script>[> Provem live reload <]-->
 	<link rel="shortcut icon" href="./Desenvolvimento/favicon.ico" type="image/x-icon">
@@ -20,8 +21,31 @@
 </head>
 
 <body>
-	<a href="#diagrama_scrum" class="subir" id="voltar">⬆️ Diagrama</a>
 
+	<div class="escolhas col" id="escolher">
+        Selecione
+        <select style="margin-top: 10px" id="select_mao" class="select" aria-label="opções" onchange="mudou()">
+            <option value="1">👆</option>
+            <option value="2">👆🏿</option>
+            <option value="3">👆🏾</option>
+            <option value="4">👆🏽</option>
+            <option value="5">👆🏼</option>
+            <option value="6">👆🏻</option>
+        </select>
+        <hr class="style-six" />
+        Atividade
+
+        <br />
+        <input id="input_mostrar" onclick="mostrar()" style="margin-top: 10px" type="checkbox"> Mostrar
+    </div>
+    <div onclick="costumizar()" class="costumizar" id="costumize">
+        Costumize
+    </div>
+    <div class="mostrar_atividade" id="mostrar_atividade">
+        Atividade
+    </div>
+
+    <a href="#diagrama_scrum" class="subir bot_voltar" id="voltar">👆️ Diagrama</a>
 	<h1>Clique nas atividades para ver detalhes!</h1>
 	<div id="diagrama_scrum">
 		<a href="#topico_elencar_necessidades" id="elencar_necessidades" class="clickable round green"></a>
@@ -154,7 +178,7 @@
 				<li><strong>A2.4</strong> Analisar o impacto dos itens do Product Backlog.</li>
 				<li><strong>A2.5</strong> Estimar o esforço necessário para cada item do Product Backlog.</li>
 				<li><strong>A2.6</strong> Elaborar o Product Backlog de acordo com o <strong>
-					<a href="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.docx" download="Template do Product Backlog">ANEXO 1</a></strong> .</li>
+					<a href="#topico_anexo1">ANEXO 1</a></strong> .</li>
 			</ul>
 			<h2>Recursos (ferramentas, métodos, técnicas)</h2>
 			<ul>
@@ -315,7 +339,7 @@
 				<li><strong>A4.5</strong> Definir as atividades de cada membro da equipe durante a <i> Sprint </i>
 					atual.</li>
 				<li><strong>A4.6</strong> Elaborar o <i> Sprint Backlog </i> de acordo com o <strong>
-				<a href="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.docx" download="Template do Sprint Backlog">ANEXO 2</a></strong> .</li>
+				<a href="#topico_anexo2">ANEXO 2</a></strong> .</li>
 			</ul>
 			<h2>Recursos (ferramentas, métodos, técnicas)</h2>
 			<ul>
@@ -576,7 +600,7 @@
 				<li><strong>A8.4</strong> Avaliar a qualidade do trabalho entregue durante o Sprint e discutir formas de melhorá-lo.</li>
 				<li><strong>A8.5</strong> Avaliar o desempenho da equipe durante o Sprint e identificar oportunidades de melhoria.</li>
 				<li><strong>A8.6</strong> Registrar e documentar detalhadamente as manutenções concluídas em um relatório de acordo com o 
-					<strong><a href="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.docx" download="Template do Relatório da Sprint"> ANEXO III</a> </strong>, a fim de manter um histórico.</li>
+				<strong><a href="#topico_anexo3"></a>ANEXO III</a> </strong>, a fim de manter um histórico.</li>
 			</ul>
 			<h2>Recursos (ferramentas, métodos, técnicas)</h2>
 			<ul>
@@ -788,25 +812,16 @@
 			</p>
 		</section>
 		<section class="topic" id="topico_anexo1">
-			<h1>Anexo I - Product Backlog</h1>
-			<iframe src="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.pdf" width="100%" height="1000px"></iframe>
-			<!-- <a href="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.docx" download="Template do Product Backlog">
-				<button class="btn"><i class="fa fa-download"></i> Download do Anexo</button>
-			</a> -->
+			<img id="anexo1" src="./Desenvolvimento/images/anexo/anexo1.jpg" alt="Anexo I"/>
+            <a class="button" href="./Desenvolvimento/documentacao/Product-Backlog-TEMPLATE.docx" download="Template do Product Backlog">Baixar Documento</a>
 		</section>
 		<section class="topic" id="topico_anexo2">
-			<h1>Anexo II - Sprint Backlog</h1>
-			<iframe src="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.pdf" width="100%" height="1000px"></iframe>
-			<!--<a href="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.docx" download="Template do Sprint Backlog">
-				<button class="btn"><i class="fa fa-download"></i> Download do Anexo</button>
-			</a> -->
+			<img id="anexo2" src="./Desenvolvimento/images/anexo/anexo2.jpg" alt="Anexo II"/>
+            <a class="button" href="./Desenvolvimento/documentacao/SprintBacklog-TEMPLATE.docx" download="Template do Sprint Backlog">Baixar Documento</a>
 		</section>
 		<section class="topic" id="topico_anexo3">
-			<h1>Anexo III - Relatório da Sprint</h1>
-			<iframe src="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.pdf" width="100%" height="1000px"></iframe>
-			<!-- <a href="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.docx" download="Template do Relatório da Sprint">
-				<button class="btn"><i class="fa fa-download"></i> Download do Anexo</button>
-			</a> -->
+			<img id="anexo3" src="./Desenvolvimento/images/anexo/anexo3.jpg" alt="Anexo III"/>
+            <a class="button" href="./Desenvolvimento/documentacao/RelatórioSprint-TEMPLATE.docx" download="Template do Relatório da Sprint">Baixar Documento</a>
 		</section>
 	</section>
 
