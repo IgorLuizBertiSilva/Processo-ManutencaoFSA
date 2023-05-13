@@ -8,8 +8,8 @@
 .clickable {
     position: absolute;
     display: block;
-	/*background-color: red;*/
-	/*opacity:  0.2;*/
+    /*background-color: red;*/
+    /*opacity:  0.2;*/
 }
 
 .round {
@@ -33,72 +33,127 @@
     transition: background-color 0.3s;
 }
 
-#captacao {
-    width: 13.4%;
-    height: 4.4%;
-    top: 18.8%;
-    left: 32.8%;
-} 
-
-#revisao_historias {
-    width: 13.8%;
-    height: 4.4%;
-    top: 29%;
-    left: 32%;
+#elencar_necessidades {
+    width: 10.8%;
+    height: 4%;
+    top: 16.5%;
+    left: 17%;
 }
 
-#definir_ferramentas {
-    width: 10.7%;
-    height: 7.4%;
-    top: 47.5%;
-    left: 52%;
+#criar_product_backlog {
+    width: 13%;
+    height: 6%;
+    top: 31%;
+    left: 28%;
 }
 
-#elaboracao_backlog {
-    width: 10.5%;
-    height: 4.4%;
-    top: 48.5%;
-    left: 30%;
+#atualizar_product_backlog {
+    width: 12%;
+    height: 6%;
+    top: 31%;
+    left: 6%;
 }
+
 #planejar_sprint {
-    width: 12.1%;
-    height: 2.5%;
-    top: 11.5%;
-    left: 61.5%;
+    width: 7.2%;
+    height: 4%;
+    top: 32.1%;
+    left: 64%;
 }
-#executar_atividades {
-    width: 14%;
-    height: 4.4%;
-    top: 23.6%;
-    left: 61%;
+
+#executar_atividades_sprint {
+    width: 8%;
+    height: 5.2%;
+    top: 31%;
+    left: 82.7%;
 }
-#reuniao {
-    width: 11.8%;
-    height: 4.4%;
-    top: 24.0%;
-    left: 77%;
+
+#realizar_reuniao_periodica {
+    width: 6.5%;
+    height:7%;
+    top: 15%;
+    left: 83.3%;
 }
+
 #revisao_sprint {
-    width: 14.4%;
-    height: 4.4%;
-    top: 38%;
-    left: 61%;
+    width: 7%;
+    height:3%;
+    top: 45.5%;
+    left: 83.3%;
 }
-#realizar_retrospectiva {
-    width: 15%;
-    height: 4.4%;
-    top: 73.3%;
-    left: 61.0%;
+
+#retrospectiva_sprint {
+    width: 9%;
+    height:3%;
+    top: 64.1%;
+    left: 75.6%;
 }
-#verificar_product_backlog {
-    width: 15%;
-    height: 4.4%;
-    top: 73.3%;
-    left: 35%;
+
+#atualizar_documentacao {
+    width: 11.5%;
+    height:3.3%;
+    top: 64.1%;
+    left: 51.6%;
 }
-#verificar_historias {
-    width: 16.7%;
-    height: 4.4%;
-    top: 80%;
-    left: 13.5%;
+
+#conferir_novas_necessidades {
+    width: 8%;
+    height:5.1%;
+    top: 51%;
+    left: 16%;
+}
+
+#conferir_produto_finalizado {
+    width: 8%;
+    height:5%;
+    top: 70.5%;
+    left: 16%;
+}
+
+#product_backlog1{
+    width: 8.8%;
+    height: 3%;
+    top: 25.4%;
+    left: 40.56%;
+}
+#product_backlog2{
+    width: 6.3%;
+    height: 2.5%;
+    top: 38.5%;
+    left: 68.8%;
+}
+
+#product_backlog3{
+    width: 9%;
+    height:3%;
+    top: 73.2%;
+    left: 81.2%;
+}
+
+#product_backlog4{
+    width: 6.6%;
+    height:2.3%;
+    top: 66.4%;
+    left: 10.3%;
+}
+
+#product_backlog5{
+    width: 7%;
+    height:2.5%;
+    top: 84.5%;
+    left: 9%;
+}
+
+#sprint_backlog{
+    width: 5.3%;
+    height: 3.5%;
+    top: 25%;
+    left: 75.2%;
+}
+
+#relatorio_sprint{
+    width: 6.6%;
+    height: 3.5%;
+    top: 50.5%;
+    left: 70%;
 }
